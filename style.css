@@ -1,0 +1,244 @@
+
+
+
+
+a{
+    padding: 0;
+    margin: 0;
+    font-family: Dubai, medium ;
+    font-size: 50px;
+}
+body{
+    background-color: #f8ebf4;
+    }
+head{
+    background-color: #EFCFE6;
+}
+
+body.html{
+    overflow-x: hidden;
+}
+nav{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+
+}
+#checkbox-menu,
+.toggle{
+    display: none;
+}
+
+.menu{
+    padding: 0;
+    margin: 0;
+    height: 75.2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+    background-color: #EFCFE6;
+}
+.menu li a {
+    background-color: #EFCFE6;
+    color:#642B54;
+    text-decoration: none;
+    align-self: center;
+    font-size: 13px;
+    padding: 10px 15px;
+    transition: background .2s linear;
+}
+.menu li a:hover{
+    background:linear-gradient( to left, #EFCFE6, #fff,#EFCFE6);
+    border-radius: 3px;
+}
+.menu li a.logo{
+    font-family: Rosamunda One;
+    font-size: 50px;
+    margin-right: 240px;
+}
+.menu li a.button{
+    margin-right: 0px;
+    font-family: ui-rounded, bold;
+    font-size: 110%;
+}
+.wrapper{
+    margin: 0 auto;
+    max-width: 1100px;
+    width: 100%;
+}
+.intro{
+    margin-top: 25px;
+    display: flex;
+    justify-content:flex-end;
+
+}
+.intro-img{
+    background-image: url(img/intro2.png);
+    height: 640px;
+    width: 965px;
+    justify-content: flex-end;
+    margin-left: 8px;
+    position: fixed;
+    
+}
+.intro .intro-text{
+    position: relative;
+    font-size: 62px;
+    right: 145px;
+    top: 220px;
+    color: #5d1f45;
+}
+.intro-button{
+    background-color: #642B54;
+    color: #EFCFE6;
+    max-width: 590px;
+    position: relative;
+    right: 0px;
+    top: 579px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 15px;
+}
+.intro-button i{
+    color: #EFCFE6;
+    margin-right: 30px;
+}
+.intro-button p{
+    font-size: 18px;
+    margin-right: 60px;
+}
+
+.bukets{
+    z-index: auto;
+    background: #dabcd2;
+    padding: 60px;
+    float: left;
+}
+.buket h1{
+    margin-bottom: 85px;
+    font-size: 40px;
+
+}
+.card{
+    max-width: 427px; 
+    background: #fff;
+    box-shadow: 0 0 10px rgba(81, 11, 80, 0.5) ;
+}
+.card-container{
+    padding: 25px;
+}
+.card-info{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+
+}
+.card-info .money{
+    font-size:  18px; 
+    color: #642B54;
+
+}
+.card-info i{
+    
+}
+
+
+@media screen and (max-width: 765px){
+    a{
+        padding: 0;
+        margin: 0;
+        }
+    .toggle{
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        width: 100%;
+        color: #EFCFE6;
+        background: #642B54;
+        transition: all .1s linear;
+    }
+    .toggle:hover{
+        
+        background: #642B54;
+    }
+    #checkbox-menu:checked + label .touch li{
+        opacity: 1;
+        visibility: visible;
+        transition: all .7s linear;        
+    }
+    #checkbox-menu:checked + label .touch {
+    height: 350px;
+    }
+    .menu{
+        display: flex;
+        flex-direction:column;
+        justify-content: space-around;
+        align-items: center;
+        height: 0;
+        transition: height .3s linear;
+    }
+    .menu li{
+        display: flex;
+        align-self: center;
+        width: 95%;
+        opacity: 0;
+        visibility: hidden;
+    }
+    .menu li a{
+        width: 955px;
+        text-align: center;
+        align-self: center;
+        align-content: center;
+
+    }
+    .menu li a.logo{
+        font-family: Rosamunda One;
+        font-size: 50px;
+        margin-right: 0;
+    }
+    .menu li a.button{
+    margin-right: 0;
+    }
+    .intro{
+        margin-top: 0;
+        display: block;
+        max-width: 100%;
+    }
+    .intro-img{
+        background-position: bottom 50px right 570px;
+    }
+    .intro .intro-text{
+        position: relative;
+        font-size: 35px;
+        right: -10px;
+        top: 95px;
+    }
+    .intro .intro-button{
+        right: 0;
+        top: 615px;
+        padding: 5px 18px;
+        position: relative;
+
+    }
+    .intro-button p{
+        font-size: 13px;
+        margin-right: 0;
+    }
+    .intro-img{
+        background: url(img/intro2.png) no-repeat;
+        background-position: no-repeat;
+        max-height: 667px;
+        width: 414px;
+        margin: 0;
+    }
+    body{
+        background-color: #f8ebf4;
+        min-width: 414px;
+        }
+
+       
+}
